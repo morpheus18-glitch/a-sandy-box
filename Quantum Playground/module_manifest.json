@@ -1,0 +1,63 @@
+---
+
+## **2. `module_manifest.json`**
+
+### **Path:** `/QuantumPlayground/module_manifest.json`  
+**Purpose:** Full index of all implemented files and systems
+
+```json
+{
+  "session": "checkpoint_01",
+  "modules": [
+    {
+      "name": "runtime_loop_manager.py",
+      "type": "conversation_core",
+      "description": "Main simulation loop for multi-agent dialog rounds"
+    },
+    {
+      "name": "ml_pipeline_controller.py",
+      "type": "ml_core",
+      "description": "Triggers all post-simulation learning systems"
+    },
+    {
+      "name": "trait_reinforcement_trainer.py",
+      "type": "ml",
+      "description": "Evolves traits based on sentiment, volatility, and performance"
+    },
+    {
+      "name": "rdip_tracker.py",
+      "type": "analysis",
+      "description": "Tracks recursive dialog intelligence metrics"
+    },
+    {
+      "name": "rdip_evolution_handler.py",
+      "type": "analysis",
+      "description": "Promotes agent tier and milestone tags from RDiP"
+    },
+    {
+      "name": "abp_controller.py",
+      "type": "protocol_runtime",
+      "description": "Resolves .abp mappings from intent/emotion to physical behavior"
+    },
+    {
+      "name": "abp_evolution_engine.py",
+      "type": "ml",
+      "description": "Mutates and evolves ABP profile over time based on behavior logs"
+    },
+    {
+      "name": "nesi_engine.py",
+      "type": "ml_evolution",
+      "description": "NeuroEvolutionary Swarm Intelligence engine"
+    },
+    {
+      "name": "agent_fusion_engine.py",
+      "type": "ml_fusion",
+      "description": "Fuses two agents into a hybrid using trait folding"
+    },
+    {
+      "name": "replay_renderer.py",
+      "type": "export",
+      "description": "Streams timeline logs into animation controller feeds"
+    }
+  ]
+}

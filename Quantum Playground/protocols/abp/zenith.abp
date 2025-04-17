@@ -1,0 +1,38 @@
+{
+  "agent_id": "zenith",
+  "version": "1.0",
+  "pose_mapping": {
+    "inform": "explain_pose",
+    "challenge": "lean_forward",
+    "agree": "open_chest_nod",
+    "deceive": "shift_weight_look_away"
+  },
+  "gesture_mapping": {
+    "neutral": "hand_rest",
+    "emotional": "open_palm_reach",
+    "strategic": "point_and_halt",
+    "sarcastic": "tilt_head_shrug"
+  },
+  "emotion_blend_profiles": {
+    "confidence_high": {"stance": "upright", "speed": "smooth", "face": "intense"},
+    "empathy_high": {"gaze": "soft", "hands": "gentle", "motion": "sway"},
+    "anger_spike": {"stance": "tense", "voice": "sharp", "gesture": "jab"}
+  },
+  "feedback_loops": {
+    "overheat": {
+      "trigger": "rapid_emotion_swings",
+      "effect": "fatigue_pose",
+      "suppress_behavior": true
+    },
+    "sync_loss": {
+      "trigger": "contradiction_count > 3",
+      "effect": "glitch_behavior",
+      "override_voice": "modulated"
+    }
+  },
+  "training_mode": {
+    "enabled": true,
+    "reward_style": "stability",
+    "evolution_trait": "expressiveness"
+  }
+}

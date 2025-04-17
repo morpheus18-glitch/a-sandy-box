@@ -1,0 +1,6 @@
+{
+  "session_name": "duel_test",
+  "agents": ["zenith", "aurora"],
+  "prompt": "Who is best suited to lead humanity after an AI uprising?",
+  "rounds": 5
+}

@@ -1,0 +1,6 @@
+update_agent_memory(
+  agent_id="zenith",
+  event_type="A2A Response",
+  summary="Challenged Orion’s battle plan with alternative strategy.",
+  protocol="a2a"
+)

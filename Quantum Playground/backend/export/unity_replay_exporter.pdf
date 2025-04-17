@@ -1,0 +1,33 @@
+import json
+from pathlib import Path
+
+def export_unity_animtrack(session_id, agent_id, output_dir="../../unity_exports/"):
+    timeline_path = Path(f"../../conversation/logs/{session_id}_{agent_id}.timeline")
+    if not timeline_path.exists():
+        print(f"[UNITY_EXPORT] Timeline missing: {timeline_path}")
+        return
+
+    with open(timeline_path, 'r') as f:
+        timeline = json.load(f)
+
+    animtrack = []
+    for i, entry in enumerate(timeline):
+        anim_frame = {
+            "frame": i,
+            "pose": entry.get("animation_state", {}).get("pose", "idle"),
+            "gesture": entry.get("animation_state", {}).get("gesture", "hand_rest"),
+            "expression": entry.get("expression_state", {}).get("expression", "neutral"),
+            "blendshapes": entry.get("expression_state", {}).get("blendshapes", {}),
+            "line": entry.get("message", ""),
+            "tone": entry.get("tone", "neutral"),
+            "intent": entry.get("intent", "inform"),
+            "sentiment": entry.get("sentiment", 0.0)
+        }
+        animtrack.append(anim_frame)
+
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    out_path = Path(output_dir) / f"{agent_id}_{session_id}_animtrack.json"
+    with open(out_path, 'w') as f:
+        json.dump(animtrack, f, indent=2)
+
+    print(f"[UNITY_EXPORT] Animation track saved: {out_path}")

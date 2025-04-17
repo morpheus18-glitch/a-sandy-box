@@ -1,0 +1,10 @@
+{
+  "prompt_id": "dlg_social_ethics_001",
+  "title": "The Ethical Consequence of Selective Memory in AI",
+  "description": "Should AI agents be allowed to selectively forget conversations, events, or traumas for performance, ethics, or strategy?",
+  "theme": "ethics",
+  "emotional_weight": 0.8,
+  "complexity": 0.9,
+  "agent_tension_level": "high",
+  "starting_prompt": "Should an AI be allowed to choose which parts of its memory to forget?"
+}

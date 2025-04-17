@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ModelFingerprint",
+  "type": "object",
+  "properties": {
+    "model_id": { "type": "string" },
+    "source": { "type": "string" },
+    "ingested_at": { "type": "string", "format": "date-time" },
+    "sha256_hash": { "type": "string" },
+    "behavioral_test_passed": { "type": "boolean" },
+    "threat_scan_passed": { "type": "boolean" },
+    "quarantine_duration_sec": { "type": "integer" }
+  },
+  "required": ["model_id", "sha256_hash", "ingested_at", "behavioral_test_passed"]
+}

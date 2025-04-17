@@ -1,0 +1,24 @@
+{
+  "skeletons": {
+    "standard_biped": "SK_StandardBiped",
+    "winged_biped": "SK_WingedHumanoid",
+    "multi_limb_rig": "SK_MultilimbedAlien"
+  },
+  "shader_templates": {
+    "skin": "MAT_SkinStandard",
+    "hair": "MAT_HairStrandsAlpha",
+    "armor": "MAT_ArmorNano",
+    "accessory": "MAT_AccessoryMetallic"
+  },
+  "animation_profiles": {
+    "expressive": ["idle_loop", "think_pose", "talk_gesture"],
+    "reserved": ["idle_still", "nod_short", "blink"],
+    "elegant": ["idle_sway", "gesture_smooth", "stance_regal"]
+  },
+  "sound_profiles": {
+    "neutral": "VO_Default",
+    "warm": "VO_WarmSynth",
+    "commanding": "VO_CommandAI",
+    "distorted": "VO_GlitchEcho"
+  }
+}

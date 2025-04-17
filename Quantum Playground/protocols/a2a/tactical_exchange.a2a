@@ -1,0 +1,2 @@
+{"from_agent": "zenith", "to_agent": "orion", "timestamp": "2025-04-13T23:59:10Z", "message": "I believe we should flank the left side.", "intent": "persuade", "confidence": 0.88, "thread_id": "flank_discussion", "conversation_id": "battle_201"}
+{"from_agent": "orion", "to_agent": "zenith", "timestamp": "2025-04-13T23:59:12Z", "message": "I'm skeptical—cover fire is too weak there.", "intent": "challenge", "confidence": 0.92, "thread_id": "flank_discussion", "conversation_id": "battle_201"}
