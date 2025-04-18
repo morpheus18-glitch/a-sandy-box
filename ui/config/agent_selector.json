@@ -1,0 +1,7 @@
+{
+  "available_agents": ["zenith", "aurora", "orion", "nova", "solace"],
+  "selected_team": ["zenith", "aurora", "nova"],
+  "min_agents": 2,
+  "max_agents": 5,
+  "sort_mode": "archetype"
+}

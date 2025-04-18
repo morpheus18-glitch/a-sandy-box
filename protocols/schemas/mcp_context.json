@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MCPContext",
+  "type": "object",
+  "properties": {
+    "model_id": { "type": "string" },
+    "agent_id": { "type": "string" },
+    "active_topics": { "type": "array", "items": { "type": "string" } },
+    "context_window": { "type": "array", "items": { "type": "string" } },
+    "role_alignment": { "type": "string", "enum": ["observer", "leader", "challenger", "mediator", "explorer"] },
+    "context_score": { "type": "number", "minimum": 0, "maximum": 1 }
+  },
+  "required": ["model_id", "agent_id", "active_topics"]
+}

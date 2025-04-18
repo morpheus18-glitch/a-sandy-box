@@ -1,0 +1,7 @@
+{
+  "smile": { "animation_id": "face_smile_01", "duration": 1000 },
+  "nod": { "animation_id": "head_nod_02", "duration": 900 },
+  "frown": { "animation_id": "face_frown_01", "duration": 800 },
+  "shrug": { "animation_id": "body_shrug_03", "duration": 1100 },
+  "raise_hand": { "animation_id": "hand_raise_05", "duration": 1200 }
+}

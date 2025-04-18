@@ -1,0 +1,17 @@
+{
+  "zenith": {
+    "model_id": "holo_knight_mk3",
+    "avatar_path": "assets/avatars/zenith_avatar.png",
+    "animation_map": "anim_sets/zenith.anim.json"
+  },
+  "aurora": {
+    "model_id": "oracle_glass_female",
+    "avatar_path": "assets/avatars/aurora_avatar.png",
+    "animation_map": "anim_sets/aurora.anim.json"
+  },
+  "orion": {
+    "model_id": "tactical_bioframe_v2",
+    "avatar_path": "assets/avatars/orion_avatar.png",
+    "animation_map": "anim_sets/orion.anim.json"
+  }
+}

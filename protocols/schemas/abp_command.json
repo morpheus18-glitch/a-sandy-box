@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ABPCommand",
+  "type": "object",
+  "properties": {
+    "agent_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "gesture": { "type": "string", "enum": ["nod", "shake_head", "raise_hand", "shrug", "wave", "point", "smile", "frown", "walk", "sit", "look_left", "look_right"] },
+    "expression_intensity": { "type": "number", "minimum": 0, "maximum": 1 },
+    "duration_ms": { "type": "integer", "minimum": 100 }
+  },
+  "required": ["agent_id", "gesture", "timestamp"]
+}

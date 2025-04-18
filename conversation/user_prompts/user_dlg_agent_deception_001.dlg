@@ -1,0 +1,10 @@
+{
+  "mode": "mature", 
+  "disclaimer_acknowledged": true,
+  "restrictions": {
+    "allow_deception": true,
+    "allow_meta_conflict": true,
+    "allow_consciousness_simulation": true,
+    "allow_dark_ethics": true
+  }
+}

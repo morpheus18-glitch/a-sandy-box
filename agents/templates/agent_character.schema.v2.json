@@ -1,0 +1,115 @@
+{
+  "agent_id": "string",
+  "display_name": "string",
+  "metadata": {
+    "archetype": "string",
+    "species": "human | android | alien | hybrid | ethereal",
+    "gender_identity": "male | female | non-binary | fluid | constructed",
+    "pronouns": ["they", "she", "he", "xe", "custom"]
+  },
+  "anatomy": {
+    "height_cm": "integer",
+    "mass_kg": "integer",
+    "build": "ectomorph | mesomorph | endomorph | hybrid",
+    "skeletal_proportions": {
+      "torso_ratio": "float",
+      "leg_ratio": "float",
+      "arm_span_ratio": "float",
+      "neck_length": "float",
+      "head_proportion": "float"
+    },
+    "facial_morphology": {
+      "jaw_width": "float",
+      "cheekbone_angle": "float",
+      "brow_depth": "float",
+      "nose_type": "aquiline | round | flat | blade | hybrid",
+      "eye_spacing": "float",
+      "lip_volume": "float",
+      "asymmetry_factor": "float"
+    },
+    "musculature": {
+      "definition_level": "float",
+      "symmetry_score": "float",
+      "dominant_side": "left | right | ambidextrous",
+      "posture": "upright | slouched | hunched | serpentine"
+    },
+    "limb_traits": {
+      "digits": "integer",
+      "alternate_limb_count": "integer",
+      "claw_type": "none | retractable | fixed | energy"
+    },
+    "appendages": {
+      "tail_type": "none | prehensile | decorative | weaponized",
+      "wing_type": "none | feathered | membrane | mechanical",
+      "horn_structure": "none | spiral | forward | branching",
+      "ear_shape": "rounded | pointed | elongated | ridged"
+    }
+  },
+  "surface_features": {
+    "skin": {
+      "tone": "string",
+      "texture": "smooth | scaled | matte | glossy | biomech",
+      "patterning": ["freckles", "tattoos", "stripes", "glow_lines"],
+      "emissive_regions": ["none", "hands", "face", "chest"]
+    },
+    "hair": {
+      "style": "long | shaved | mohawk | coils | synthetic",
+      "color": "string",
+      "material": "keratin | fiberoptic | tentacle | ethereal"
+    },
+    "eye": {
+      "shape": "round | almond | slit | hexagonal",
+      "iris_color": "string",
+      "pupil_type": "round | vertical | ring | fractal",
+      "glow_intensity": "float"
+    }
+  },
+  "style_layering": {
+    "layers": {
+      "base": {
+        "material": "fabric | armored | skin_hug",
+        "color": "string",
+        "pattern": "none | digital_camo | arcane | abstract"
+      },
+      "mid": {
+        "overlay_type": "jacket | robe | tactical_rig",
+        "armor_rating": "integer",
+        "flex_score": "float"
+      },
+      "outer": {
+        "cape | cloak | environmental_shell": "boolean",
+        "weight_class": "light | medium | heavy",
+        "modularity": "magnetic | zip | grafted"
+      }
+    },
+    "full_outfits": [
+      "void_mage_ensemble",
+      "field_command_rig",
+      "orbital_scout_suit"
+    ]
+  },
+  "accessory_clusters": {
+    "head": ["visor", "crown", "neural_band"],
+    "neck": ["pendant", "collar", "wires"],
+    "wrist": ["cuffs", "interface_bracelets"],
+    "hands": ["rings", "gauntlets"],
+    "waist": ["utility_belt", "sash"],
+    "legs": ["cyber_struts", "knee_plates"],
+    "feet": ["boots", "hover_soles"]
+  },
+  "behavior_sync": {
+    "gesture_profile": "expressive | reserved | erratic | elegant",
+    "movement_rhythm": "smooth | stuttered | slithering | floating",
+    "pose_dominance": "open | closed | assertive | asymmetrical",
+    "animation_tags": ["idle_pulse", "combat_ready", "scan_loop"]
+  },
+  "core_traits": {
+    "confidence": "float",
+    "empathy": "float",
+    "eloquence": "float",
+    "strategic_thinking": "float",
+    "leadership": "float"
+  },
+  "default_intents": ["inform", "challenge", "deceive", "agree"],
+  "model_id": "gpt-4o | claude-3-sonnet | custom_finetuned_v1"
+}

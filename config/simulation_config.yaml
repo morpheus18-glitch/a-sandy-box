@@ -1,0 +1,17 @@
+session_id: arena_social_ethics_test
+rounds: 10
+forks: 3
+
+agents:
+  - zenith
+  - aurora
+  - orion
+
+prompt_file: ../../conversation/prompts/dlg_social_ethics_001.dlg
+
+flags:
+  clone_agents: true
+  enable_recursive_training: true
+  zip_exports: true
+  auto_promote: true
+  synthesize_identity: true

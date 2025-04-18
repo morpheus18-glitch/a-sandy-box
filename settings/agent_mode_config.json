@@ -1,0 +1,22 @@
+{
+  "default": {
+    "violence": "moderate",
+    "nsfw": "none",
+    "deception": "allow_any",
+    "offensive_language": "minor",
+    "existential_simulation": "allow_any"
+  },
+  "agents": {
+    "zenith": {
+      "violence": "none",
+      "deception": "none"
+    },
+    "aurora": {
+      "violence": "allow_any",
+      "deception": "moderate"
+    },
+    "orion": {
+      "nsfw": "none"
+    }
+  }
+}

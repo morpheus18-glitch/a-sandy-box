@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentMemory",
+  "type": "object",
+  "properties": {
+    "agent_id": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "memory_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "event_type": { "type": "string" },
+          "summary": { "type": "string" },
+          "linked_protocol": { "type": "string" }
+        }
+      }
+    },
+    "traits": {
+      "type": "object",
+      "properties": {
+        "empathy": { "type": "number", "minimum": 0, "maximum": 1 },
+        "strategic_thinking": { "type": "number", "minimum": 0, "maximum": 1 },
+        "eloquence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "leadership": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["agent_id", "created_at"]
+}
